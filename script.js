@@ -4,7 +4,7 @@ const mushroomData = {
         latin: 'Boletus edulis',
         desc: 'Ценна ядлива гъба. Има гугла с кафяв цвят и пънче, което е по-светло и удебелено в основата. Месото е бяло и не променя цвета си при разрязване.',
         warning: 'Може да се сбърка с Жлъчната манатарка (неотровна, но много горчива) или Дяволската гъба.',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Boletus_edulis_EtgHolzmoerling.jpg/640px-Boletus_edulis_EtgHolzmoerling.jpg'
+        img: 'images/manatarka.jpg'
     },
     'muhomorka': {
         title: 'Червена Мухоморка',
@@ -18,7 +18,7 @@ const mushroomData = {
         latin: 'Cantharellus cibarius',
         desc: 'Една от най-вкусните гъби. Има характерен жълт цвят и форма на фуния. Ухае леко на кайсии. Никога не червясва.',
         warning: 'Може да се сбърка с Омфалотус (силно отровна), която расте на туфи върху дървета.',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Pfifferling_Cantharellus_cibarius.jpg/640px-Pfifferling_Cantharellus_cibarius.jpg'
+        img: 'images/pachi-krak.jpg'
     },
     'deathcap': {
         title: 'Зелена Мухоморка',
@@ -32,28 +32,70 @@ const mushroomData = {
         latin: 'Macrolepiota procera',
         desc: 'Много популярна и вкусна гъба. Има голяма шапка с люспи, наподобяваща чадър, и пръстенче на пънчето, което се движи свободно.',
         warning: 'Внимавайте за по-дребни двойници като Пантерката (отровна), чието пръстенче не се движи.',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Macrolepiota_procera_pl.jpg/640px-Macrolepiota_procera_pl.jpg'
+        img: 'images/surnela.jpg'
     },
     'satanas': {
         title: 'Дяволска гъба',
         latin: 'Rubroboletus satanas',
         desc: 'Едра и красива, но отровна гъба. Има сивкава шапка и червено пънче. При разрязване посинява силно.',
         warning: 'Двойник на Манатарката! Различава се по червените пори отдолу и силната синя промяна на цвета при натиск.',
-        img: 'images/dqvloska.jpg'
+        img: 'images/dqvolska.jpg'
     },
     'maslovka': {
         title: 'Обикновена Масловка',
         latin: 'Suillus luteus',
         desc: 'Вкусна гъба, често срещана в иглолистни гори. Шапката е слузеста и лепкава, с кафява кожа, която лесно се бели.',
         warning: 'Препоръчва се да се обели кожата на шапката преди готвене, защото може да предизвика разстройство.',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Suillus_luteus_LC0245.jpg/640px-Suillus_luteus_LC0245.jpg'
+        img: 'images/maslovka.jpg'
     },
     'biasna': {
         title: 'Бясна гъба (Гълъбка)',
         latin: 'Russula emetica',
         desc: 'Малка гъба с яркочервена шапка и снежнобели пластинки. Има много лют, изгарящ вкус.',
         warning: 'Не е смъртоносна, но предизвиква силно повръщане. Лесно се бърка с ядливи червени гълъбки.',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Russula_emetica_in_Poland.jpg/640px-Russula_emetica_in_Poland.jpg'
+        img: 'images/bqsna.jpg'
+    },
+    'kladnica': {
+        title: 'Кладница',
+        latin: 'Pleurotus ostreatus',
+        desc: 'Расте на туфи върху широколистни дървета. Шапката е ветрилообразна, сива или кафява. Месото е бяло и плътно.',
+        warning: 'Безопасна гъба, но внимавайте да не я берете от замърсени райони край пътища, тъй като попива газове.',
+        img: 'images/kladnica.jpg'
+    },
+    'omfalotus': {
+        title: 'Омфалотус (Маслинова гъба)',
+        latin: 'Omphalotus olearius',
+        desc: 'Красива, оранжева гъба, която расте на туфи върху пънове. Пластинките й светят в тъмното (биолуминесценция).',
+        warning: 'ОТРОВЕН двойник на Пачия крак! Различава се по това, че расте на дърво, а не на земята.',
+        img: 'images/omfalotus.jpg'
+    },
+    'cheladinka': {
+        title: 'Полска Челадинка',
+        latin: 'Marasmius oreades',
+        desc: 'Дребна, но вкусна гъба. Расте на "самодивски кръгове" по ливадите. Има приятен аромат на бадеми.',
+        warning: 'Внимавайте за отровни двойници от род Clitocybe, които обаче нямат характерната жилавост на пънчето.',
+        img: 'images/cheladinka.jpg'
+    },
+    'karbolova': {
+        title: 'Карболова печурка',
+        latin: 'Agaricus xanthodermus',
+        desc: 'Двойник на ядливите печурки. При натиск в основата на пънчето пожълтява ярко. Мирише неприятно на мастило/карбол.',
+        warning: 'Силно отровна! При варене миризмата на химия се засилва. Не яжте печурки, които пожълтяват при нараняване!',
+        img: 'images/karbolova.jpg'
+    },
+    'rijika': {
+        title: 'Рыжика',
+        latin: 'Lactarius deliciosus',
+        desc: 'Оранжева гъба, която при разрязване отделя оранжев "млечен" сок. Расте основно в иглолистни гори.',
+        warning: 'Сравнително лесна за разпознаване. Внимавайте да не я сбъркате с лъжливата млечница (бял сок).',
+        img: 'images/rijika.jpg'
+    },
+    'panterka': {
+        title: 'Пантерка',
+        latin: 'Amanita pantherina',
+        desc: 'Кафява шапка с множество бели брадавици. Прилича на Бисерната гъба и Сърнелата, но е по-дребна.',
+        warning: 'СИЛНО ОТРОВНА! Пръстенчето на пънчето НЕ се движи (за разлика от Сърнелата).',
+        img: 'images/panterka.jpg'
     }
 };
 function openModal(id) {
